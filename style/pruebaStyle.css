@@ -23,7 +23,7 @@ img {
     display: flex;
     align-items: center;
     min-height: 80vh;
-    background-color: #7e7676;
+    background-color: #ffffff;
     padding: 70px 0;
 }
 
@@ -35,6 +35,18 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+}
+
+/* Centrar el icono del carrito dentro del menú */
+.menu > div {
+    display: flex;
+    align-items: center;
+}
+
+.menu > div ul {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -54,6 +66,14 @@ img {
     padding: 20px;    
     color: #000000;
     display: block;
+    transition: background-color 0.18s ease, color 0.18s ease;
+    border-radius: 9999px;
+}
+
+.menu .navbar ul li a:hover,
+.menu .navbar ul li a:focus {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #000000;
 }
 
 #menu {
@@ -73,6 +93,12 @@ img {
     position: relative;
 }
 
+.submenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .submenu #carrito{
     display: none;
 }
@@ -84,7 +110,7 @@ img {
     backdrop-filter: blur(10px);
     top: 100%;
     z-index: 1;
-    background-color: #e02222;
+    background-color: rgb(245, 245, 245);
     padding: 20px;
     min-height: 400px;
 }
@@ -94,15 +120,41 @@ table{
 }
 
 th, td{
-    color: #ffffff;
+    color: #000000; // Color del texto en las tablas
+    padding: 10px;
+    text-align: left;
 }
 
 .borrar{
-    background-color: #000000;
-    border-radius: 50%;
+    background-color: #000000; // Color de fondo del botón
+    font-size: 16px; // Tamaño de la fuente
+    border-radius: 50%; // Bordes redondeados
+    height: 30px; // Altura del botón
+    width: 30px; // Ancho del botón
+    display: flex; // Usar flexbox para centrar el contenido
     padding: 5px 10px;
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-weight: 800;
     cursor: pointer;
+}
+
+.carrito-vacio{
+    color: #ffffff; // Color blanco para el ícono del carrito vacío
+    background-color: #000000; // Fondo
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    display: block;
+    object-fit: contain;
+    border-radius: 50%;
+
+}
+
+/* Botones generales redondeados */
+button,
+.btn {
+    border-radius: 9999px;
 }
