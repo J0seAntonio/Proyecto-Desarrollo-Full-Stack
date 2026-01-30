@@ -69,13 +69,13 @@ img {
     display: flex;
     align-items: center;
     height: 60px;
-    padding: 10px;
+    padding: 0px;
 }
 
 /* Imagen del logo con altura fija */
 .logo img {
     height: 125px;
-    width: auto;
+    width: 100px;
     object-fit: contain;
 }
 
@@ -190,7 +190,6 @@ th, td{
 
 /* Icono del carrito vacío con borde rosa */
 .carrito-vacio{
-
     background-color: #ffffff;
     text-align: center;
     margin: 0;
@@ -198,7 +197,7 @@ th, td{
     width: 50px;
     display: block;
     object-fit: contain;
-    border-radius: 50%;
+    border-radius: 35%;
 }
 
 /* Botones generales redondeados */
