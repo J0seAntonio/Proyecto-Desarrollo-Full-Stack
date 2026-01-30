@@ -3,13 +3,52 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/style_main.css">
         <link rel="icon" href="../sources/Logos/Logo_icon_Vibe_Co.png" type="image/png">
         <title>Sección Niños - Vibe&Co</title>
     </head>
 
     <body>
-        <h1>Sección Niños</h1>
-        <p>Bienvenido a la sección de ropa para niños. Aquí encontrarás una variedad de prendas diseñadas especialmente para los más pequeños.</p>
+    <header>
+    <div class="menu">
+        <a href="main.html" class="logo"><img src="../sources/Logos/Logo_icon_Vibe_Co.png" alt="Vibe&Co Logo"></a>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="../sources/icons/Menu.png" class="menuIcono" alt="Icono de menú">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html">Inicio</a></li>
+                <li><a href="the_newest.html">Lo Nuevo</a></li>
+                <li><a href="section_men.html">Hombres</a></li>
+                <li><a href="section_women.html">Mujeres</a></li>
+                <li><a href="section_kids.html">Niños y Niñas</a></li>
+                <li><a href="section_offers.html">Ofertas</a></li>
+            </ul>
+        </nav>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <img src="../sources/icons/Carrito de compras.png" class="carrito-vacio" alt="Carrito de compras">
+                    <div id="carrito">  
+                        <table id="listaCarrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="shopping_cart_view.html" id="vaciarCarrito" class="btn2">Ir al Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </header>
     </body>
 
     <footer>
