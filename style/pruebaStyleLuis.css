@@ -1,0 +1,256 @@
+/* ====================================
+   ESTILOS GLOBALES Y RESET
+   ==================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Tipografía general del sitio */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+}
+
+/* Contenedor principal con ancho máximo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ====================================
+   ESTILOS DEL HEADER Y MENÚ
+   ==================================== */
+/* Estilos del header principal */
+.header {
+    display: flex;
+    align-items: center;
+}
+
+/* Menú superior fijo */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+}
+
+/* Centrar el icono del carrito dentro del menú */
+.menu > div {
+    display: flex;
+    align-items: center;
+}
+
+.menu > div ul {
+    display: flex;
+    align-items: center;
+}
+
+/* ====================================
+   ESTILOS DEL LOGO
+   ==================================== */
+/* Logo con imagen escalada */
+.logo {
+    font-size: 25px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+}
+
+/* Imagen del logo con altura fija */
+.logo img {
+    height: 125px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* ====================================
+   ESTILOS DE LA BARRA DE NAVEGACIÓN
+   ==================================== */
+/* Items de la navegación */
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+/* Enlaces de navegación*/
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;    
+    color: #000000;
+    display: block;
+}
+
+/* Efecto hover en enlaces de navegación */
+.menu .navbar ul li a:hover,
+.menu .navbar ul li a:focus {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #000000;
+}
+
+/* ====================================
+   ESTILOS DEL MENÚ RESPONSIVE
+   ==================================== */
+
+/* Checkbox oculto para menú responsive */
+#menu {
+    display: none;
+}
+
+/* Icono del menú */
+.menuIcono {
+    width: 25px;
+}
+
+/* Etiqueta del menú hamburguesa */
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/* ====================================
+   ESTILOS DEL SUBMENÚ Y CARRITO
+   ==================================== */
+
+/* Contenedor del submenú */
+.submenu{
+    position: relative;
+}
+
+/* Flexbox para alinear elementos del submenú */
+.submenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Carrito oculto por defecto */
+.submenu #carrito{
+    display: none;
+}
+
+/* Carrito visible al pasar el ratón */
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    min-height: 400px;
+}
+
+/* ====================================
+   ESTILOS DE TABLAS
+   ==================================== */
+
+/* Tabla de carrito a ancho completo */
+table{
+    width: 100%;
+}
+
+/* Celdas de tabla con padding y color de texto */
+th, td{
+    color: #000000;
+    padding: 10px;
+    text-align: left;
+}
+
+/* ====================================
+   ESTILOS DE BOTONES
+   ==================================== */
+
+/* Botón de borrar artículos del carrito */
+.borrar{
+    background-color: #000000;
+    font-size: 16px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* Icono del carrito vacío con borde rosa */
+.carrito-vacio{
+
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    display: block;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* Botones generales redondeados */
+button,
+.btn {
+    border-radius: 9999px;
+}
+
+/* ====================================
+   ESTILOS DE LA IMAGEN HERO
+   ==================================== */
+
+/* Sección de imagen principal (Sky Sunset) */
+.hero-image {
+    width: 100%;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+/* Imagen responsiva en la sección hero */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ====================================
+   PRODUCTOS
+   ==================================== */
+.productos{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.productoContenido{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+.producto{
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.producto img{
+    width: 250px;
+    height: 370px;
+    margin-bottom: 20px;
+}
