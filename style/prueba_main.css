@@ -130,10 +130,6 @@ img {
 /* Contenedor del submenú */
 .submenu{
     position: relative;
-}
-
-/* Flexbox para alinear elementos del submenú */
-.submenu{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,7 +148,7 @@ img {
     backdrop-filter: blur(10px);
     top: 100%;
     z-index: 1;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(216, 213, 213);
     padding: 20px;
     min-height: 400px;
 }
@@ -237,10 +233,19 @@ button,
     text-align: center;
 }
 
+.productosDestacadosSub{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
 .productoContenido{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 50px;
+    gap: 0px;
 }
 
 .producto{
@@ -251,8 +256,9 @@ button,
 
 .producto img{
     width: 250px;
-    height: 370px;
+    height: 300px;
     margin-bottom: 20px;
+    border-radius: 12%;
 }
 
 /* ====================================
@@ -264,7 +270,7 @@ button,
     background-color: #f5f5f5;
     border-radius: 10px;
 }
-main h2{
+.objetivosSub{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     color: white;
