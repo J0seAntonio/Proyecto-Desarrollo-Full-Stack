@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../sources/Logos/Logo_icon_Vibe_Co.png" type="image/png">
-        <link rel="stylesheet" href="../style/style_main.css">
+        <link rel="stylesheet" href="../style/prueba_main.css">
         <title>Vibe&Co</title>
     </head>
     <body>
@@ -13,16 +13,16 @@
                 <a href="#" class="logo"><img src="../sources/Logos/Logo_icon_Vibe_Co.png" alt="Vibe&Co Logo"></a>
                 <input type="checkbox" id="menu">
                 <label for="menu">
-                    <img src="../sources/icons/Menu.png" class="menu-icon" alt="Icono de menú">
+                    <img src="../sources/icons/menu.png" class="menu-icon" alt="Icono de menú">
                 </label>
             <nav class="navbar">
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Lo Nuevo</a></li>
-                    <li><a href="#">Hombres</a></li>
-                    <li><a href="#">Mujeres</a></li>
-                    <li><a href="#">Niños y Niñas</a></li>
-                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="../views/the_newest.html">Lo Nuevo</a></li>
+                    <li><a href="../views/section_men.html">Hombres</a></li>
+                    <li><a href="../views/section_women.html">Mujeres</a></li>
+                    <li><a href="../views/section_kids.html">Niños y Niñas</a></li>
+                    <li><a href="../views/section_offers.html">Ofertas</a></li>
                 </ul>
             </nav>
             <div>
@@ -47,11 +47,89 @@
                 </ul>
             </div>
             </div>
-        </header>
-        <main>
             <section class="hero-image">
                 <img src="../sources/img/Sky_Sunset.jpg" alt="Sky Sunset">
             </section>
+        </header>
+        <main class="productosContenedor" id="lista1">
+                <h2>Productos Destacados</h2>
+                <div class="productoContenido">
+                    <div class="producto">
+                        <img src="../sources/RopaVibe/Hombre/CamisaMangaLarga/VibeClubA.png" alt="Producto1">
+                        <h3>Vibe Club</h3>
+                        <p>Camisa Manga Larga</p>
+                        <p class="precio">$59</p>
+                        <a href="#" class="agregarAcarrito" data-id="1">Agregar al Carrito</a>
+                    </div>
+
+                    <div class="producto">
+                        <img src="../sources/RopaVibe/Hombre/Camisas/NikeDriFitA.png" alt="Producto2">
+                        <h3>Vibe DriFit</h3>
+                        <p>Camisa</p>
+                        <p class="precio">$49</p>
+                        <a href="#" class="agregarAcarrito" data-id="2">Agregar al Carrito</a>
+                    </div>
+
+                    <div class="producto">
+                        <img src="../sources/RopaVibe/Hombre/Sudaderas/VibeTechSudaderaA.png" alt="Producto1">
+                        <h3>Vibe Tech</h3>
+                        <p>Sudadera</p>
+                        <p class="precio">$79</p>
+                        <a href="#" class="agregarAcarrito" data-id="3">Agregar al Carrito</a>
+                    </div>
+                </div>
+            <div class="objetivos">
+            <h2>Nuestros Objetivos</h2>
+            <ol class="lista">
+                <li>Crear prendas que reflejen quién eres, no solo cómo te ves.</li>
+                <li>Convertir tu estilo en una forma de expresión auténtica.</li>
+                <li>Diseñar ropa quie conecte con tu vibra y tu personalidad.</li>
+                <li>Romper lo común y vestir lo extraordinario.</li>
+                <li>Hacer que cada outfit cuente una historia.</li>
+                <li>Impulsar la identidad de cada persona a través de diseños con carácter y propósito.</li>
+                <li>Crear piezas que inspiren confianza, actitud y autenticidad.</li>
+                <li>Transformar la ropa en una extensión de tu esencia.</li>
+            </ol>
+            </div>
         </main>
+        <footer class="Pie">
+            <div class="info">
+                <div class="columnas">
+                    <h3>Colecciones</h3>
+                    <a href="">Mujer</a>
+                    <a href="">Hombre</a>
+                    <a href="../views/section_kids.html">Niños</a>
+                    <a href="">Home</a>
+                    <a href="">Beauty</a>
+                    <a href="">Tarjetas de regalo</a>
+                </div>
+
+                <div class="columnas">
+                    <h3>Información Corporativa</h3>
+                    <a href="">Trabajar en Vibe&Co</a>
+                    <a href="">Acerca del grupo</a>
+                    <a href="">Sostenibilidad</a>
+                    <a href="">Prensa</a>
+                    <a href="">Relación con inversionistas</a>
+                    <a href="">Política empresarial</a>
+                </div>
+
+                <div class="columnas">
+                    <h3>Ayuda</h3>
+                    <a href="">Atención al cliente</a>
+                    <a href="">Mi cuenta</a>
+                    <a href="">Nuestras tiendas</a>
+                    <a href="">Términos y condiciones</a>
+                    <a href="">Contacto</a>
+                    <a href="">Compras seguras</a>
+                </div>
+            </div>
+
+            <div class="piedepagina">
+                <img src="../sources/Logos/Logo_icon_Vibe_Co.png">
+                <p>© 2026 Vibe&Co. Todos los derechos reservados.</p>
+            </div>
+
+        </footer>
     </body>
 </html>
