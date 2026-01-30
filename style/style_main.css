@@ -211,3 +211,255 @@ button,
 .btn {
 	border-radius: 9999px;
 }
+
+/* ========================================
+   SECTION_KIDS.HTML - ESTILOS
+   ======================================== */
+
+.kids-main {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.kids-header {
+	text-align: center;
+	padding: 60px 20px 40px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	margin-bottom: 60px;
+	border-radius: 20px;
+}
+
+.kids-title {
+	font-size: 48px;
+	font-weight: 800;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.kids-subtitle {
+	font-size: 20px;
+	font-weight: 300;
+	opacity: 0.95;
+}
+
+.kids-section {
+	margin-bottom: 80px;
+}
+
+.kids-category-title {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	color: #2d3748;
+	text-align: center;
+	position: relative;
+	padding-bottom: 15px;
+}
+
+.kids-category-title::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80px;
+	height: 4px;
+	background: linear-gradient(90deg, #667eea, #764ba2);
+	border-radius: 2px;
+}
+
+.kids-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 40px;
+	padding: 20px;
+}
+
+.kids-card {
+	background: white;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kids-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.kids-media {
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	background: #f7fafc;
+}
+
+.kids-media img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.kids-card:hover .kids-media img {
+	transform: scale(1.05);
+}
+
+.kids-info {
+	padding: 30px;
+}
+
+.kids-product-name {
+	font-size: 24px;
+	font-weight: 700;
+	color: #2d3748;
+	margin-bottom: 12px;
+}
+
+.kids-product-desc {
+	font-size: 16px;
+	color: #718096;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.kids-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	border-top: 2px solid #e2e8f0;
+}
+
+.kids-price {
+	font-size: 28px;
+	font-weight: 800;
+	color: #667eea;
+}
+
+.kids-btn {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	padding: 12px 30px;
+	border: none;
+	border-radius: 50px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kids-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.kids-btn:active {
+	transform: translateY(0);
+}
+
+.kids-video-container {
+	max-width: 900px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.kids-video {
+	width: 100%;
+	height: auto;
+	display: block;
+	background: #000;
+}
+
+.kids-video-info {
+	padding: 30px;
+	text-align: center;
+}
+
+.kids-features {
+	background: #f7fafc;
+	padding: 60px 20px;
+	border-radius: 20px;
+}
+
+.kids-features-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+	margin-top: 40px;
+}
+
+.kids-feature {
+	background: white;
+	padding: 40px 30px;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+	transition: transform 0.3s ease;
+}
+
+.kids-feature:hover {
+	transform: translateY(-5px);
+}
+
+.kids-feature-icon {
+	font-size: 48px;
+	color: #667eea;
+	margin-bottom: 20px;
+	font-weight: 800;
+}
+
+.kids-feature h3 {
+	font-size: 22px;
+	font-weight: 700;
+	color: #2d3748;
+	margin-bottom: 12px;
+}
+
+.kids-feature p {
+	font-size: 15px;
+	color: #718096;
+	line-height: 1.6;
+}
+
+.footer {
+	background: #2d3748;
+	color: white;
+	padding: 40px 20px;
+	text-align: center;
+	margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+	.kids-title {
+		font-size: 32px;
+	}
+	
+	.kids-subtitle {
+		font-size: 16px;
+	}
+	
+	.kids-grid {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+	
+	.kids-media {
+		height: 300px;
+	}
+	
+	.kids-category-title {
+		font-size: 24px;
+	}
+	
+	.kids-features-grid {
+		grid-template-columns: 1fr;
+	}
+}
