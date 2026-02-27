@@ -26,8 +26,6 @@ Repositorio dedicado a la gestión y entrega del Proyecto para la materia de Des
   - Niños y Niñas
   - Ofertas
   - Lo Nuevo
-- **Carrito de Compras**: Sistema flotante para agregar y visualizar productos
-- **Filtros Avanzados**: Por talla, categoría y precio
 
 ### Estilos
 
@@ -40,7 +38,7 @@ Repositorio dedicado a la gestión y entrega del Proyecto para la materia de Des
 
 ```
 Proyecto-Desarrollo-Full-Stack/
-├── views/
+├── Sources/
 │   ├── main.html
 │   ├── section_men.html
 │   ├── section_women.html
@@ -48,10 +46,13 @@ Proyecto-Desarrollo-Full-Stack/
 │   ├── section_offers.html
 │   ├── the_newest.html
 │   └── shopping_cart_view.html
-├── styles/
-│   ├── style.css
+├── src/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
 │   └── style_main.css
-├── sources/
+├── view/
 │   ├── Logos/
 │   ├── icons/
 │   ├── img/
@@ -70,7 +71,9 @@ Proyecto-Desarrollo-Full-Stack/
 - **HTML5**: Estructura semántica
 - **CSS3**: Estilos avanzados, Grid y Flexbox
 - **JavaScript**: Interactividad (en desarrollo)
-- **Base de Datos**: (A definir según avance)
+- **Base de Datos**: MongoDB (con conexion con la libreria mongoose)
+- **Entorno de Ejecucion**: Node.js
+- **Framework**: Express.js
 
 ## 📱 Páginas del Sitio
 
@@ -84,10 +87,9 @@ Proyecto-Desarrollo-Full-Stack/
 
 ## 🎨 Identidad Visual
 
-- **Color Primario**: Púrpura/Azul (#667eea)
-- **Color Secundario**: Púrpura Oscuro (#764ba2)
-- **Acento**: Rosa (#ff6b9d)
-- **Tipografía**: Arial, sans-serif
+- **Color Primario**: Blanco (#ffffff)
+- **Color Secundario**: Negro (#000000)
+- **Tipografía**: Poppins, Sanserif
 
 ## ⚖️ Notas Legales
 
@@ -101,7 +103,6 @@ Las imágenes de productos mostradas en esta plataforma son propiedad de Nike y 
 - ✅ Galería de productos
 - ⏳ Sistema de carrito (en desarrollo)
 - ⏳ Backend y base de datos (próximas fases)
-- ⏳ Pasarela de pagos (próximas fases)
 
 ## 👥 Autores
 
@@ -109,4 +110,4 @@ Jose Antonio, Gabriel Ley, Luis Segura.
 
 ---
 
-**Última actualización**: 2026
+**Última actualización**: Jueves 26 de Febrero de 2026
