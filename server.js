@@ -8,6 +8,11 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'View')));
 
+//Pagina que se muestra al entrar a la raiz del servidor (Login) -------------------------------->
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'View', 'login.html')); //Modificar despues a Main.html o lo que sea la pagina principal
+});
+
 //CONFIGURACIÓN PARA RENDER
 const PORT = process.env.PORT || 3000;
 const SECRET_KEY = process.env.SECRET_KEY || "Vibe&CoSecretKey123";
