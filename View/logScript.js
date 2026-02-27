@@ -42,7 +42,7 @@ async function enviar(tipo){
                 localStorage.setItem('userRol', data.rol);
                 localStorage.setItem('userName', data.nombre);
                 //------------------
-                window.location.href = "main.html"; //CAMBIAR A NOMBRE DE LA PAGINA PRINCIPAL --------
+                window.location.href = "Main.html"; //CAMBIAR A NOMBRE DE LA PAGINA PRINCIPAL --------
                 //------------------
             }
         }else{
